@@ -1,0 +1,479 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 300px;
+    padding: 0;
+    font-family: "Teko", sans-serif;
+    background: #272b30;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+}
+
+.button a:hover {
+    background-color: #4799eb;
+}
+
+.spanGamesLogo {
+    background-color: #4799eb;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+.spanFreeGame {
+    color: #4799eb;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: #32383e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    background: #32383e;
+    margin: 0 300px;
+}
+
+nav .navbar .logo a {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.input-box {
+    position: relative;
+    height: 50px;
+    max-width: 350px;
+    width: 100%;
+    background: #272b30;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box i,
+.input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #f4f4f4;
+}
+
+.input-box input {
+    font-family: "Teko", sans-serif;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+    color: #f4f4f4;
+}
+
+.input-box .button {
+    font-family: "Teko", sans-serif;
+    right: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: #4799eb;
+    cursor: pointer;
+}
+
+.input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+.button a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #32383e;
+    padding: 7px 12px;;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    font-family: "Teko", sans-serif;
+    color: #f4f4f4;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #7a8288;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.dropdown-content {
+    border-style: none;
+    position: absolute;
+    background-color: #272b30;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: #f4f4f4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #7a8288;
+}
+
+.dropdown:hover.dropdown-content {
+    display: block;
+}
+
+.dropdown:hover.dropdown-btn {
+    background-color: #32383e;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #272b30;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #7a8288;
+    border-radius: 2.5px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #32383e;
+}
+
+.title {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 0.4;
+    padding-top: 100px;
+}
+
+.platforms {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#games {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #272b30;
+    border-radius: 5px;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    color: #f4f4f4;
+    line-height: 1;
+}
+
+.modal-title {
+    font-size: 2.5em;
+}
+
+.modal-content p {
+    font-family: "Teko", sans-serif;
+    font-weight: light;
+    font-size: 1.2em;
+    line-height: 1;
+    padding: 0;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+}
+
+.modal-p {
+    font-weight: light;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        color: #4799eb;
+    }
+}
+
+.modal-game_URL {
+    font-family: "Teko", sans-serif;
+    font-size: 1em;
+    border-style: none;
+    background-color: #4799eb;
+    cursor: pointer;
+    color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    width: 110px;
+}
+
+.modal-game_URL:hover {
+    background-color: #32383e;
+}
+
+.card {
+    list-style: none;
+    margin: 0;
+    background-color: #32383e;
+    color: #f4f4f4;
+    text-align: left;
+    line-height: 1;
+    height: 280px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card-title, .card-genre, .card-description, .card-platform {
+    padding: 0 40px;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-genre {
+    margin-top: 5px;
+    color: #7a8288;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-description {
+    font-weight: normal;
+}
+
+.card-platform {
+    color: #7a8288;
+}
+
+.msg {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#prev, #next {
+    background-color: #32383e;
+    border-style: none;
+    border-radius: 5px;
+    font-family: "Teko", sans-serif;
+    color: #f4f4f4;
+    font-size: 1em;
+    padding: 10px 20px;
+    &:hover {
+        background-color: #4799eb;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.pagination a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #7a8288;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 40px;
+    color: #7a8288;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.pagination a:hover {
+    color: #f4f4f4;
+    background-color: #4799eb;
+}
+
+.pagination .active {
+    background-color: #4799eb;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    color: #f4f4f4;
+    background-color: #272b30;
+    border-top: 1px solid #32383e;
+    text-decoration: none;
+}
+
+.footer > * {
+    flex: 1 100%;
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.footer__nav > * {
+    flex: 1 50%;
+}
+
+.nav__ul a {
+    margin: 0;
+    color: #7a8288;
+}
+
+.nav__ul a:hover {
+    color: #4799eb;
+}
+
+.nav__ul--extra {
+    column-count: 10;
+    list-style: none;
+    padding: 0;
+}
+
+.legal {
+    color: #7a8288;
+    text-align: center;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../FreegamesApp/img/game-icon.png">
+    <link rel="stylesheet" href="../FreegamesApp/css/index.css">
+    <link rel="stylesheet" href="../FreegamesApp/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Free Games Online</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><span class="spanFreeGame">Free <span class="spanGamesLogo">Games</span> Online</span></a>
+            </div>
+            <div class="input-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here..." />
+                <button class="button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="button">
+        <a href="#"><i class="fas fa-arrow-up button-up"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="title" id="title">
+            <h1>Discover Unlimited Entertainment: </h1>
+            <h1>Play Free Online Games Today!</h1>
+        </div>
+        <div class="platforms">
+            <p>Platforms: Windows (PC), Browser and All</p>
+        </div>
+        <div class="dropdown hidden">
+            <button class="dropdown-btn">Genre &#9662</button>
+            <div class="dropdown-content">
+                <li id="mmorpg" class="mmorpg"><a href="#">MMORPG</a></li>
+                <li id="shooter"><a href="#">Shooter</a></li>
+                <li id="strategy"><a href="#">Strategy</a></li>
+                <li id="moba"><a href="#">MOBA</a></li>
+                <li id="racing"><a href="#">Racing</a></li>
+                <li id="sports"><a href="#">Sports</a></li>
+                <li id="social"><a href="#">Social</a></li>
+                <li id="sandbox"><a href="#">Sandbox</a></li>
+                <li id="open-world"><a href="#">Open-world</a></li>
+                <li id="survival"><a href="#">Survival</a></li>
+                <li id="pvp"><a href="#">PvP</a></li>
+                <li id="pve"><a href="#">PvE</a></li>
+                <li id="pixel"><a href="#">Pixel</a></li>
+                <li id="voxel"><a href="#">Voxel</a></li>
+                <li id="zombie"><a href="#">Zombie</a></li>
+                <li id="turn-based"><a href="#">Turn-based</a></li>
+                <li id="first-person"><a href="#">First-person</a></li>
+                <li id="third-person"><a href="#">Third-Person</a></li>
+                <li id="top-down"><a href="#">Top-down</a></li>
+                <li id="tank"><a href="#">Tank</a></li>
+                <li id="space"><a href="#">Space</a></li>
+                <li id="sailing"><a href="#">Sailing</a></li>
+                <li id="side-scroller"><a href="#">Side-scroller</a></li>
+                <li id="superhero"><a href="#">Superhero</a></li>
+                <li id="permadeath"><a href="#">Permadeath</a></li>
+                <li id="card"><a href="#">Card</a></li>
+                <li id="battle-royale"><a href="#">Battle-royale</a></li>
+                <li id="mmo"><a href="#">MMO</a></li>
+                <li id="mmofps"><a href="#">MMOFPS</a></li>
+                <li id="mmotps"><a href="#">MMOTPS</a></li>
+                <li id="3d"><a href="#">3D</a></li>
+                <li id="2d"><a href="#">2D</a></li>
+                <li id="anime"><a href="#">Anime</a></li>
+                <li id="fantasy"><a href="#">Fantasy</a></li>
+                <li id="sci-fi"><a href="#">Sci-fi</a></li>
+                <li id="fighting"><a href="#">Fighting</a></li>
+                <li id="action-rpg"><a href="#">Action-RPG</a></li>
+                <li id="action"><a href="#">Action</a></li>
+                <li id="military"><a href="#">Military</a></li>
+                <li id="martial-arts"><a href="#">Martial-arts</a></li>
+                <li id="flight"><a href="#">Flight</a></li>
+                <li id="low-spec"><a href="#">Low-spec</a></li>
+                <li id="tower-defense"><a href="#">Tower-defense</a></li>
+                <li id="horror"><a href="#">Horror</a></li>
+                <li id="mmorts"><a href="#">MMORTS</a></li>
+            </div>
+        </div>
+        <ul id="games"></ul>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-image" class="modal-image" src="" alt="">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <p id="modal-developer" class="modal-developer"></p>
+                <p id="modal-publisher" class="modal-publisher"></p>
+                <p id="modal-genre" class="modal-genre"></p>
+                <p id="modal-platform" class="modal-platform"></p>
+                <p id="modal-release_date" class="modal-release_date"></p>
+                <p id="modal-description" class="modal-description"></p>
+                <button id="modal-game_URL" class="modal-game_URL">View Website</button>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+        </div>
+
+    <footer class="footer">
+        <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Quick Links</h2>
+            <ul class="nav__ul nav__ul--extra">
+                <li id="mmorpg"><a href="#">MMORPG</a></li>
+                <li id="shooter"><a href="#">Shooter</a></li>
+                <li id="strategy"><a href="#">Strategy</a></li>
+                <li id="moba"><a href="#">MOBA</a></li>
+                <li id="racing"><a href="#">Racing</a></li>
+                <li id="sports"><a href="#">Sports</a></li>
+                <li id="social"><a href="#">Social</a></li>
+                <li id="sandbox"><a href="#">Sandbox</a></li>
+                <li id="open-world"><a href="#">Open-world</a></li>
+                <li id="survival"><a href="#">Survival</a></li>
+                <li id="pvp"><a href="#">PvP</a></li>
+                <li id="pve"><a href="#">PvE</a></li>
+                <li id="pixel"><a href="#">Pixel</a></li>
+                <li id="voxel"><a href="#">Voxel</a></li>
+                <li id="zombie"><a href="#">Zombie</a></li>
+                <li id="turn-based"><a href="#">Turn-based</a></li>
+                <li id="first-person"><a href="#">First-person</a></li>
+                <li id="third-person"><a href="#">Third-Person</a></li>
+                <li id="top-down"><a href="#">Top-down</a></li>
+                <li id="tank"><a href="#">Tank</a></li>
+                <li id="space"><a href="#">Space</a></li>
+                <li id="sailing"><a href="#">Sailing</a></li>
+                <li id="side-scroller"><a href="#">Side-scroller</a></li>
+                <li id="superhero"><a href="#">Superhero</a></li>
+                <li id="permadeath"><a href="#">Permadeath</a></li>
+                <li id="card"><a href="#">Card</a></li>
+                <li id="battle-royale"><a href="#">Battle-royale</a></li>
+                <li id="mmo"><a href="#">MMO</a></li>
+                <li id="mmofps"><a href="#">MMOFPS</a></li>
+                <li id="mmotps"><a href="#">MMOTPS</a></li>
+                <li id="3d"><a href="#">3D</a></li>
+                <li id="2d"><a href="#">2D</a></li>
+                <li id="anime"><a href="#">Anime</a></li>
+                <li id="fantasy"><a href="#">Fantasy</a></li>
+                <li id="sci-fi"><a href="#">Sci-fi</a></li>
+                <li id="fighting"><a href="#">Fighting</a></li>
+                <li id="action-rpg"><a href="#">Action-RPG</a></li>
+                <li id="action"><a href="#">Action</a></li>
+                <li id="military"><a href="#">Military</a></li>
+                <li id="martial-arts"><a href="#">Martial-arts</a></li>
+                <li id="flight"><a href="#">Flight</a></li>
+                <li id="low-spec"><a href="#">Low-spec</a></li>
+                <li id="tower-defense"><a href="#">Tower-defense</a></li>
+                <li id="horror"><a href="#">Horror</a></li>
+                <li id="mmorts"><a href="#">MMORTS</a></li>
+            </ul>
+        </li>
+        <div class="legal">
+            <p>&copy; 2024 Free Games Online. All rights reserved. Made by Raven Danielle Espinosa.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../FreegamesApp/scripts/freegamesonline.js"></script>
+    <script src="../FreegamesApp/scripts/drowdown.js"></script>
+    <script src="../FreegamesApp/scripts/upButton.js"></script>
+</body>
+</html>

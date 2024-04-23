@@ -1,0 +1,221 @@
+@media only screen and (max-width: 1454px) {
+    body, nav .navbar {
+        margin: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1054px) {
+    .title{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 881px) {
+    nav .navbar .menu {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .title{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    nav .navbar .menu {
+        gap: 30px;
+    }
+
+    .nav__ul--extra {
+        column-count: 5;
+    }
+}
+
+@media only screen and (max-width: 761px) {
+    body, nav .navbar {
+        margin: 0 50px;
+    }
+
+    .input-box {
+        width: 200px;
+    }
+
+    .input-box input{
+        padding: 0 10px;
+    }
+
+    .input-box .button{
+        width: 50px;
+        padding: 12px 10px;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .spanGamesLogo, .spanFreeGame {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    .spanGamesLogo, .spanFreeGame {
+        font-size: 15px;
+    }
+
+    .navbar .menu li a {
+        font-size: 14px;
+    }
+
+    .input-box {
+        height: 40px;
+        width: 150px;
+    }
+
+    .input-box input{
+        padding: 0 10px;
+    }
+
+    .input-box .button{
+        width: 50px;
+        padding: 10px 10px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 526px) {
+    body, nav .navbar {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .title{
+        line-height: 1;
+    }
+
+    .pagination a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    body, nav .navbar {
+        margin: 0 10px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .platforms {
+        font-size: 13px;
+    }
+
+    .cta-btn {
+        display: none;
+    }
+    
+    #games {
+        justify-content: center;
+    }
+
+    nav .navbar .menu {
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .nav__ul--extra {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 334px) {
+    .title {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .platforms {
+        text-align: center;
+    }
+
+    #games {
+        justify-items: center;
+    }
+
+    .card {
+        width: 200px;
+        height: auto;
+    }
+
+    .card-title, .card-genre, .card-description, .card-viewmMore, .card-platform{
+        padding: 0 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-genre, .card-description, .card-viewmMore{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .dropdown{
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-box {
+        height: 35px;
+        width: 120px;
+    }
+
+    .input-box input{
+        font-size: 9px;
+        padding: 0 10px;
+    }
+
+    .input-box .button{
+        width: 50px;
+        padding: 10px 10px;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    .card {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 242px) {
+    .spanGamesLogo, .spanFreeGame {
+        font-size: 12px;
+    }
+
+    .navbar .menu li a {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+        flex: 1;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
